@@ -1,0 +1,150 @@
+@keyframes emph {
+  0% {margin-bottom: -58px;}
+  50% {margin-bottom: -48px;}
+  100% {margin-bottom: -58px;}
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+body.search{
+    background-color: #f5f5f5;
+    background-image: url('../assets/bg_map_light.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.search_card {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 25px 20px;
+    border-radius: 50px;
+    width: 85%;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -160px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+input[type="text"] {
+    border: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.marker {
+    background-color: #0cef00;
+    height: 10px;
+    width: 80px;
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+.marker-top {
+    margin-top: -29px;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.marker-bottom {
+    margin-top: 20px;
+    left: 50%;
+    margin-left: -40px;
+}
+.nearby_card {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50px 50px 0 0;
+    height: 310px;
+    margin-top: -150px;
+    padding: 25px;
+}
+.station_header img {
+    width: 20px;
+}
+.station_header{
+    color: #fff;
+    font-size: 0.9em;
+    padding: 8px;
+    border-radius: 20px;
+}
+.station_header span {
+    font-size: 0.8em;
+}
+.esmeralda{
+    background-color: #2aad8d;
+}
+.yellow{
+    background-color: #e0d800;
+}
+.station_card {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 110px;
+    margin-bottom: 30px;
+}
+header{
+    padding: 20px;
+    position: fixed;
+}
+header img{
+    width: 35px
+}
+.nav_fav {
+    text-align: center;
+    top: 335px;
+    position: relative;
+}
+.nav_fav img{
+    width: 60px;
+}
+.grad {
+    background-image: linear-gradient(to right, #0fff00 , yellow, #ff0800);
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    height: 8px;
+    border-radius: 20px;
+}
+.station_details{
+    text-align: center;
+}
+.status_row img{
+width: 12px;
+    margin-bottom: -58px;
+    position: relative;
+    animation-name: emph;
+  animation-duration: 1s;
+animation-iteration-count:infinite;
+}
+.com{
+    font-size: 0.7em;
+}
+.status_circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    vertical-align: middle;
+}
+.status_wrapper{
+    margin-top: 10px;
+    margin-bottom: -25px;
+}

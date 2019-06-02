@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <title>Busca</title>
+</head>
+<body class="search">
+<div class="wrapper">
+    <header>
+        <img src="../../assets/menu.png">
+    </header>
+    <div class="search_card">
+        <span class="marker marker-top">&nbsp;</span>
+        <input type="text" placeholder="Para onde nós vamos?">
+        <span class="marker marker-bottom">&nbsp;</span>
+    </div>
+    <div class="nav_fav">
+        <img src="../../assets/btn_home.png"> <img src="../../assets/btn_work.png">
+    </div>
+</div>
+<div class="nearby_card">
+    <span class="marker marker-top">&nbsp;</span>
+    <div class="row">
+            <div th:each = "estacao : ${estacoes}" class="col-6">
+                <div class="station_card">
+                    <div class="station_header esmeralda">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="../../assets/cptm.png"> <span id="e1" th:text="${estacao.nome}"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="station_details">
+                        <div class="status_wrapper"><span class="status_circle">&nbsp;</span> <span class="com" id="com1">Lotação máxima</span></div>
+                        <div class="status_row">
+                            <img src="../../assets/marker.png" th:style="'left:'+ ${estacao.lotacao} +'%'" >
+                            <span class="grad">&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+
+</body>
+</html>
